@@ -1,4 +1,4 @@
-minikube_namespace_task
+Minikube_namespace_task
 
 🟣 Minikube/Kubernetes Task – Exploring Namespace Creation
 
@@ -12,35 +12,33 @@ This repository documents my GUVI DevOps module assignment focused on hands-on e
 minikube start
 kubectl get nodes
 
-text
+
 
 2. Listed all available namespaces:
 kubectl get namespaces
 
-text
+
 
 3. Created a new custom namespace:
 kubectl create namespace kausheek-lab
 
-text
+
 
 4. Deployed a pod in the custom namespace:
 kubectl run mongo-db --image=mongo:latest --restart=Never -n kausheek-lab
 
-text
 
 5. Verified pod status in all namespaces:
 kubectl get pods --all-namespaces
 kubectl get pods -n kausheek-lab
 
-text
+
 
 6. Deleted the namespace and confirmed resource cleanup:
 kubectl delete namespace kausheek-lab
 kubectl get pods -n kausheek-lab
 kubectl get namespaces
 
-text
 
 7. Used ASCII art (`figlet`) for status banners throughout the process for clear visibility.
 
